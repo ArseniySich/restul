@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ульрес ресторан</title>
+    <link rel="shortcut icon" href="/src/img/android-chrome-192x192.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <style>
+        :root {
+            --swiper-theme-color: rgb(255, 255, 255);
+        }
+    </style>
+    
+    <header class="header">
+        <div class="logo__container">
+            <span class="logo">Ульрес</span>
+        </div>
+
+        <div class="menu__container">
+            <i onclick=showSidebar() class="fa-solid fa-bars menu"></i>
+        </div>
+
+        <nav class="header__nav">
+            <ul class="header__lists">
+                <li class="header__items"><a class="header__item" href="/index.html">Главная страница</a></li>
+                <li class="header__items"><a class="header__item" href="/menu.html">Меню</a></li>
+                <li class="header__items"><a class="header__item" href="/about.html">О нас</a></li>
+                <li class="header__items"><a class="header__item" href="/services.html">Услуги</a></li>
+                <li class="header__items"><a class="header__item" href="/gallery.html">Галерея</a></li>
+                <li class="header__items"><a class="header__item" href="/news.html">Новости</a></li>
+                <li class="header__items"><a class="header__item" href="/contact.html">Контакты</a></li>
+                <li class="header__items"><a class="header__item header__item--color" href="/reservation.html">Забронировать стол</a></li>
+            </ul>
+        </nav>
+
+        <div class="sidebar">
+            <ul class="header__sidebar">
+                <i onclick=hideSidebar() class="header__items fa-solid fa-x"></i>
+                <li onclick=hideSidebar()><a class="header__items--sidebar" href="/index.html">Главная страница</a></li>
+                <li onclick=hideSidebar()><a class="header__items--sidebar" href="/menu.html">Меню</a></li>
+                <li onclick=hideSidebar()><a class="header__items--sidebar" href="/about.html">О нас</a></li>
+                <li onclick=hideSidebar()><a class="header__items--sidebar" href="/services.html">Услуги</a></li>
+                <li onclick=hideSidebar()><a class="header__items--sidebar" href="/gallery.html">Галерея</a></li>
+                <li onclick=hideSidebar()><a class="header__items--sidebar" href="/news.html">Новости</a></li>
+                <li onclick=hideSidebar()><a class="header__items--sidebar" href="/contact.html">Контакты</a></li>
+                <li onclick=hideSidebar()><a class="header__items--sidebar header__items--sidebar--color"
+                        href="/reservation.html">Забронировать стол</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero__texts">
+                <h1 class="text">Традиционные блюда</h1>
+                <h2 class="tittle">Вкусно и полезно</h2>
+                <p class="copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aspernatur laboriosam cumque maxime quae, impedit corporis assumenda, accusantium hic id laudantium mollitia blanditiis ex minima doloremque cupiditate. Ut, quisquam totam!</p>
+            </div>
+
+            <div class="hero__buttons">
+                <a href="/menu.html" class="hero__links hero__links--color">Наше меню</a>
+                <a href="/gallery.html" target="_blank" class="hero__links">Галерея</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="specials" class="specialities">
+        <div class="container specialities--container">
+            <div class="hero__texts">
+                <h3 class="text">Наши гости хорошо питаются</h3>
+                <h4 class="tittle tittle-specialities">Наши специализации</h4>
+                <p class="copy">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur fugiat soluta, natus, est nam facere ipsa autem nihil cumque rerum repellendus animi! Nobis et ullam, impedit quidem ipsam laborum suscipit.</p>
+            </div>
+
+            <div class="specialites__picture--container">
+                <article class="specialities__article">
+                    <img class="specialities__img" src="/src/img/specialities1-min.jpg" alt="beef and meet">
+                </article>
+
+                <article class="specialities__article">
+                    <img class="specialities__img" src="/src/img/specialities2-min.png" alt="beef and meet">
+                </article>
+
+                <article class="specialities__article">
+                    <img class="specialities__img" src="/src/img/specialities3-min.jpg" alt="beef and meet">
+                </article>
+            </div>
+
+            <div class="copy__specialities--container">
+                <p class="copy copy--specialities">Lorem, ipsum. <span class="span__underline">Lorem.</span>
+                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. <span class="span__underline">greens</span>Lorem ipsum dolor sit amet consectetur.</p>
+                <p class="copy copy--specialities copy--specialities--hidden">Lorem ipsum <span
+                        class="span__underline">lorem1</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio adipisci maiores mollitia velit repellat labore consequatur delectus voluptas harum nam tempora quo ea, doloremque omnis! Quod eum similique cupiditate! Quisquam. <span
+                        class="span__underline">Lorem.</span>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container testimonials--container">
+
+           
+            <div class="swiper testimonials__swiper">
+
+                
+                <div class="swiper-wrapper">
+                    
+
+                    <div class="swiper-slide testimonials__slide">
+                        <figure class="testimonials__picture">
+                            <img class="testimonials__img" src="    https://e7.pngegg.com/pngimages/999/998/png-clipart-graphics-avatar-mobile-app-website-user-staff-member-head-cartoon.png"
+                                alt="">
+                        </figure>
+
+                        <div class="testimonials__text">
+                            <p class="testimonials__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                                eius natus omnis amet velit fugit perspiciatis nihil aperiam, nesciunt quia.</p>
+
+                            <p class="testimonials__name">Маркиз Де Сад</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimonials__slide">
+                        <figure class="testimonials__picture">
+                            <img class="testimonials__img" src="/src/img/photo_N.jpg"
+                                alt="">
+                        </figure>
+
+                        <div class="testimonials__text">
+                            <p class="testimonials__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                                eius natus omnis amet velit fugit perspiciatis nihil aperiam, nesciunt quia.</p>
+
+                            <p class="testimonials__name">Маркиз Де Сад</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimonials__slide">
+                        <figure class="testimonials__picture">
+                            <img class="testimonials__img" src="/src/img/photo_O.jpg"
+                                alt="">
+                        </figure>
+
+                        <div class="testimonials__text">
+                            <p class="testimonials__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                                eius natus omnis amet velit fugit perspiciatis nihil aperiam, nesciunt quia.</p>
+
+                            <p class="testimonials__name">Маркиз Де Сад</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="dishes">
+        <div class="container container--dishes">
+            <div class="dish__card">
+                <figure class="dish__picture">
+                    
+                    <img class="dish__img" src="/src/img/dishes1-min-removebg-preview.png" alt="">
+                </figure>
+
+                <div class="dish__text">
+                    <p class="dish__message">Сладкое удовольствие</p>
+                    <h4 class="dish__name">Паста «Морской рай»</h4>
+                    <p class="dish__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, esse suscipit
+                        corrupti illum sint voluptas? Tenetur impedit esse neque, repudiandae numquam aliquid, minus
+                        provident velit aliquam deserunt aspernatur perferendis dolor.</p>
+                    <a class="dish__cta" target="_blank" href="/menu.html">Посмотреть наше меню</a>
+                </div>
+            </div>
+
+            <div class="dish__card dish__card--order">
+                <figure class="dish__picture">
+                    
+                    <img class="dish__img" src="/src/img/dishes2-min-removebg-preview.png" alt="">
+                </figure>
+
+                <div class="dish__text">
+                    <p class="dish__message">Сладкое удовольствие</p>
+                    <h4 class="dish__name">Странная вещь, о которой неизвестно</h4>
+                    <p class="dish__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, esse suscipit
+                        corrupti illum sint voluptas? Tenetur impedit esse neque, repudiandae numquam aliquid, minus
+                        provident velit aliquam deserunt aspernatur perferendis dolor.</p>
+                    <a class="dish__cta" target="_blank" href="/menu.html">Посмотреть наше меню</a>
+                </div>
+            </div>
+
+            <div class="dish__card">
+                <figure class="dish__picture">
+                    
+                    <img class="dish__img" src="/src/img/dishes1-min-removebg-preview.png" alt="">
+                </figure>
+
+                <div class="dish__text">
+                    <p class="dish__message">Сладкое удовольствие</p>
+                    <h4 class="dish__name">Странная вещь, о которой неизвестно </h4>
+                    <p class="dish__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, esse suscipit
+                        corrupti illum sint voluptas? Tenetur impedit esse neque, repudiandae numquam aliquid, minus
+                        provident velit aliquam deserunt aspernatur perferendis dolor.</p>
+                    <a class="dish__cta" target="_blank" href="/menu.html">Посмотреть наше меню</a>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <p class="text gallery__text">НАША ДОРОГАЯ ГАЛЕРЕЯ</p>
+        <h3 class="tittle gallery__tittle">Наша галерея</h3>
+        <div class="container container--gallery">
+            <div class="gallery__slide">
+                <img class="gallery__img" src="/src/img/carousel1-min.jpeg" alt="">
+                <img class="gallery__img" src="/src/img/carousel2-min.jpg" alt="">
+                <img class="gallery__img" src="/src/img/carousel4-min.jpg" alt="">
+                <img class="gallery__img" src="/src/img/carousel5-min.jpg" alt="">
+                <img class="gallery__img" src="/src/img/carousel6-min.jpg" alt="">
+                <img class="gallery__img" src="/src/img/carousel1-min.jpeg" alt="">
+                <img class="gallery__img" src="/src/img/carousel2-min.jpg" alt="">
+                <img class="gallery__img" src="/src/img/carousel4-min.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="menu">
+        <div class="container container--menu">
+            <div class="menu__texts">
+                <p class="menu__text text">Специальный выбор</p>
+                <h2 class="menu__tittle tittle">Из нашего меню</h2>
+                <p class=" copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit officiis
+                    nobis cumque fugit quod possimus optio doloribus, perferendis mollitia itaque!</p>
+            </div>
+
+            <div class="menu__card--container">
+                <div class="menu__left">
+                    <article class="menu__card">
+                        <figure class="menu__picture">
+                            <img src="/src/img/dishes1-min-removebg-preview.png" alt="" class="menu__img">
+                        </figure>
+
+                        <div class="menu__description">
+                            <span class="menu__name">Суп из мидий Queso</span>
+                            <span class="menu__price">4.999₽</span>
+                            <p class="menu__copy menu__copy--dish">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="menu__card">
+                        <figure class="menu__picture">
+                            <img src="/src/img/dishes2-min-removebg-preview.png" alt="" class="menu__img">
+                        </figure>
+
+                        <div class="menu__description">
+                            <span class="menu__name">Суп из мидий Jamón</span>
+                            <span class="menu__price">2.990₽</span>
+                            <p class="menu__copy menu__copy--dish">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="menu__card">
+                        <figure class="menu__picture">
+                            <img src="src/img/dishes1-min-removebg-preview.png" alt="" class="menu__img">
+                        </figure>
+
+                        <div class="menu__description">
+                            <span class="menu__name">Суп из мидий</span>
+                            <span class="menu__price">3.500₽</span>
+                            <p class="menu__copy menu__copy--dish">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="menu__card menu__card--hidden">
+                        <figure class="menu__picture">
+                            <img src="/src/img/dishes2-min-removebg-preview.png" alt="" class="menu__img">
+                        </figure>
+
+                        <div class="menu__description">
+                            <span class="menu__name">Суп из мидий Zero</span>
+                            <span class="menu__price">1.999₽</span>
+                            <p class="menu__copy menu__copy--dish">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="menu__card menu__card--hidden">
+                        <figure class="menu__picture">
+                            <img src="/src/img/dishes1-min-removebg-preview.png" alt="" class="menu__img">
+                        </figure>
+
+                        <div class="menu__description">
+                            <span class="menu__name">Суп из мидий Tradition</span>
+                            <span class="menu__price">2.999₽</span>
+                            <p class="menu__copy menu__copy--dish">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+
+                <div class="menu__right">
+                    <article class="menu__card">
+                        <figure class="menu__picture">
+                            <img src="/src/img/dishes2-min-removebg-preview.png" alt="" class="menu__img">
+                        </figure>
+
+                        <div class="menu__description">
+                            <span class="menu__name">Суп из мидий Queso</span>
+                            <span class="menu__price">4.999₽</span>
+                            <p class="menu__copy menu__copy--dish">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="menu__card">
+                        <figure class="menu__picture">
+                            <img src="/src/img/dishes1-min-removebg-preview.png" alt="" class="menu__img">
+                        </figure>
+
+                        <div class="menu__description">
+                            <span class="menu__name">Суп из мидий Jamón</span>
+                            <span class="menu__price">3.990₽</span>
+                            <p class="menu__copy menu__copy--dish">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="menu__card">
+                        <figure class="menu__picture">
+                            <img src="src/img/dishes2-min-removebg-preview.png" alt="" class="menu__img">
+                        </figure>
+
+                        <div class="menu__description">
+                            <span class="menu__name">Суп из мидий</span>
+                            <span class="menu__price">1.500₽</span>
+                            <p class="menu__copy menu__copy--dish">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="menu__card menu__card--hidden">
+                        <figure class="menu__picture">
+                            <img src="/src/img/dishes1-min-removebg-preview.png" alt="" class="menu__img">
+                        </figure>
+
+                        <div class="menu__description">
+                            <span class="menu__name">Суп из мидий Zero</span>
+                            <span class="menu__price">1.999₽</span>
+                            <p class="menu__copy menu__copy--dish">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="menu__card menu__card--hidden">
+                        <figure class="menu__picture">
+                            <img src="/src/img/dishes2-min-removebg-preview.png" alt="" class="menu__img">
+                        </figure>
+
+                        <div class="menu__description">
+                            <span class="menu__name">Суп из мидий Tradition</span>
+                            <span class="menu__price">1.999₽</span>
+                            <p class="menu__copy menu__copy--dish">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="menu__buttons hero__buttons">
+                <a href="/menu.html" target="_blank" class="menu__links hero__links hero__links--color">View Full Menu</a>
+                <a href="/reservation.html" target="_blank" class="menu__links hero__links">Book Table</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container container--footer">
+            <div class="footer__links">
+                <ul class="footer__list">
+                    <li><p class="footer__links footer__link--size">Быстрый доступ</p></li>
+                    <li><a class="footer__link" href="/index.html">Главная страница</a></li>
+                    <li><a class="footer__link" href="/menu.html">Наше меню</a></li>
+                    <li><a class="footer__link" href="/about.html">О нас</a></li>
+                    <li><a class="footer__link" href="/gallery.html">Галерея</a></li>
+                    <li><a class="footer__link" href="#specials">Специальные предложения</a></li>
+                    <li><a class="footer__link" href="/reservation.html">Забронировать стол</a></li>
+                    <li><a class="footer__link" href="/contact.html">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__descrition">
+                <figure class="footer__picture">
+                    <span class="footer__logo logo">Ульрес</span>
+                </figure>
+
+                <div class="footer__texts">
+                    <h5 class="footer__text">Наши гости питаются хорошо</h5>
+                    <p class="footer__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempore at
+                        praesentium nemo! Asperiores ipsam ea, sit enim doloribus molestiae?</p>
+                    <a href="#" class="footer__reservation">Забронируйте сейчас</a>
+                    <a href="tel:123-456-7890" class="footer__phone">+7 927 345 67 89</a>
+                </div>
+            </div>
+
+            <div class="footer__gallery">
+                <p class="footer__text footer__text--gallery">Последняя галерея</p>
+
+                <div class="footer__gallery--container">
+                    <img class="footer__img" src="/src/img/carousel1-min.jpeg" alt="">
+                    <img class="footer__img" src="/src/img/carousel2-min.jpg" alt="">
+                    <img class="footer__img" src="/src/img/carousel4-min.jpg" alt="">
+                    <img class="footer__img" src="/src/img/carousel4-min.jpg" alt="">
+                    <img class="footer__img" src="/src/img/carousel1-min.jpeg" alt="">
+                    <img class="footer__img" src="/src/img/carousel2-min.jpg" alt="">
+                </div>
+
+
+            </div>
+
+            <p class="footer__rights">Ульрес &copy; 2024. Разработан <a class="footer__dev" target="_blank" href="">Захаров А.А.</a></p>
+        </div>
+    </footer>
+
+
+
+    <script src="/js/menu.js" >
+    </script>
+
+    <script src="/js/gallery.js">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="/js/testimonials.js"></script>
+
+    <script src="https://kit.fontawesome.com/2a76a9117a.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>
