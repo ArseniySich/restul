@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ульрес ресторан</title>
+    <link rel="shortcut icon" href="/src/img/android-chrome-192x192.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo__container">
+            <span class="logo">Ульрес</span>
+        </div>
+
+        <div class="menu__container">
+            <i onclick=showSidebar() class="fa-solid fa-bars menu"></i>
+        </div>
+
+        <nav class="header__nav">
+            <ul class="header__lists">
+                <li class="header__items"><a class="header__item" href="/index.html">Главная страница</a></li>
+                <li class="header__items"><a class="header__item" href="/menu.html">Меню</a></li>
+                <li class="header__items"><a class="header__item" href="/about.html">О нас</a></li>
+                <li class="header__items"><a class="header__item" href="/services.html">Услуги</a></li>
+                <li class="header__items"><a class="header__item" href="/gallery.html">Галерея</a></li>
+                <li class="header__items"><a class="header__item" href="/news.html">Новости</a></li>
+                <li class="header__items"><a class="header__item" href="/contact.html">Контакты</a></li>
+                <li class="header__items"><a class="header__item header__item--color" href="/reservation.html">Забронировать стол</a></li>
+            </ul>
+        </nav>
+
+        <div class="sidebar">
+            <ul class="header__sidebar">
+                <i onclick=hideSidebar() class="header__items fa-solid fa-x"></i>
+                <li onclick=hideSidebar()><a class="header__items--sidebar" href="/index.html">Главная страница</a></li>
+                <li onclick=hideSidebar()><a class="header__items--sidebar" href="/menu.html">Меню</a></li>
+                <li onclick=hideSidebar()><a class="header__items--sidebar" href="/about.html">О нас</a></li>
+                <li onclick=hideSidebar()><a class="header__items--sidebar" href="/services.html">Услуги</a></li>
+                <li onclick=hideSidebar()><a class="header__items--sidebar" href="/gallery.html">Галерея</a></li>
+                <li onclick=hideSidebar()><a class="header__items--sidebar" href="/news.html">Новости</a></li>
+                <li onclick=hideSidebar()><a class="header__items--sidebar" href="/contact.html">Контакты</a></li>
+                <li onclick=hideSidebar()><a class="header__items--sidebar header__items--sidebar--color"
+                        href="/reservation.html">Забронировать стол</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero hero--menu">
+        <div class="container">
+            <div class="hero__texts">
+                <h1 class="text">Будьте с нами</h1>
+                <h2 class="tittle">Свяжитесь с нами</h2>
+                <p class="copy">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, facilis expedita cum ab exercitationem quod adipisci consequatur modi sint, ad quo aut, officiis saepe. Ea fugit fuga obcaecati minus provident.</p>
+            </div>
+
+            <div class="hero__buttons">
+                <a href="/menu.html" class="hero__links hero__links--color">Наше меню</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact container">
+        <div class="contact__texts">
+            <h4 class="tittle text--contact">Отправьте нам сообщение</h4>
+            <p class="copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, at quae amet corrupti repellat voluptas! At, tenetur praesentium? Quos quod ducimus odio. Temporibus architecto esse exercitationem, iste molestiae nihil alias.
+            </p>
+        </div>
+
+        <div class="grid--container">
+        
+            <form class="form__container" method="POST" netlify>
+                <div class="form__between">
+                    <input id="name" placeholder="Имя" name="name">
+                    <input placeholder="Фамилия" name="lastName" type="text">
+                </div>
+
+                <div class="form__email">
+                    <input placeholder="Почта" type="email" name="Email" id="">
+                </div>
+
+                <div class="form__area">
+                    <textarea placeholder="Напишите свое обращение сюда!" name="Message" id=""></textarea>
+                </div>
+
+                <div class="form__button">
+                    <input class="form__btn" type="submit" value="Отправить">
+                </div>
+            </form>
+
+            <div class="map__container">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47765.468864491464!2d-70.14644929403471!3d-54.76215422696881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbc526e3d7962deb3%3A0xe7af7c65c73de450!2sParque%20Nacional%20Alberto%20de%20Agostini!5e0!3m2!1ses-419!2scl!4v1716165613270!5m2!1ses-419!2scl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="items__contact container">
+        <div class="item__card">
+            <i class="fa-solid fa-card fa-location-crosshairs"></i>
+            <h4 class="text text__card">Адрес</h4>
+            <p class="copy copy__card"> город Ульяновск, ул.Пушкина 34/33 <br>
+                Торнотино, Canada</p>
+        </div>
+
+        <div class="item__card">
+            <i class="fa-solid fa-card fa-phone"></i>
+            <h4 class="text text__card">Номера телефона</h4>
+            <p class="copy copy__card"><a class="cta__phone" href="">+7 997 764 23 87</a></p>
+            <p class="copy copy__card"><a class="cta__phone" href="">+7 982 111 34 20</a></p>
+        </div>
+
+        <div class="item__card">
+            <i class="fa-solid fa-card fa-envelope"></i>
+            <h4 class="text text__card">Почта</h4>
+            <p class="copy copy__card">Zakharov@gmail.com</p>
+        </div>
+
+
+    </section>
+
+    <div class="hero__buttons hero__buttons--margin">
+        <a href="#menu" class="hero__links hero__links--margin">Наше меню</a>
+    </div>
+
+    <footer class="footer">
+        <div class="container container--footer">
+            <div class="footer__links">
+                <ul class="footer__list">
+                    <li><p class="footer__links footer__link--size">Быстрый доступ</p></li>
+                    <li><a class="footer__link" href="/index.html">Главная страница</a></li>
+                    <li><a class="footer__link" href="/menu.html">Наше меню</a></li>
+                    <li><a class="footer__link" href="/about.html">О нас</a></li>
+                    <li><a class="footer__link" href="/gallery.html">Галерея</a></li>
+                    <li><a class="footer__link" href="#specials">Специальные предложения</a></li>
+                    <li><a class="footer__link" href="/reservation.html">Забронировать стол</a></li>
+                    <li><a class="footer__link" href="/contact.html">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__descrition">
+                <figure class="footer__picture">
+                    <span class="footer__logo logo">Ульрес</span>
+                </figure>
+
+                <div class="footer__texts">
+                    <h5 class="footer__text">Наши гости питаются хорошо</h5>
+                    <p class="footer__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempore at
+                        praesentium nemo! Asperiores ipsam ea, sit enim doloribus molestiae?</p>
+                    <a href="#" class="footer__reservation">Забронируйте сейчас</a>
+                    <a href="tel:123-456-7890" class="footer__phone">+7 927 345 67 89</a>
+                </div>
+            </div>
+
+            <div class="footer__gallery">
+                <p class="footer__text footer__text--gallery">Последняя галерея</p>
+
+                <div class="footer__gallery--container">
+                    <img class="footer__img" src="/src/img/carousel1-min.jpeg" alt="">
+                    <img class="footer__img" src="/src/img/carousel2-min.jpg" alt="">
+                    <img class="footer__img" src="/src/img/carousel4-min.jpg" alt="">
+                    <img class="footer__img" src="/src/img/carousel4-min.jpg" alt="">
+                    <img class="footer__img" src="/src/img/carousel1-min.jpeg" alt="">
+                    <img class="footer__img" src="/src/img/carousel2-min.jpg" alt="">
+                </div>
+
+
+            </div>
+
+            <p class="footer__rights">Ульрес &copy; 2024. Разработан <a class="footer__dev" target="_blank" href="">Захаров А.А.</a></p>
+        </div>
+    </footer>
+
+    
+
+    <script src="/js/menu.js">
+    </script>
+
+    <script src="/js/gallery.js">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="/js/testimonials.js"></script>
+
+    <script src="https://kit.fontawesome.com/2a76a9117a.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>

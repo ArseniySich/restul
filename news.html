@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ульрес ресторан</title>
+    <link rel="shortcut icon" href="/src/img/android-chrome-192x192.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/news.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo__container">
+            <span class="logo">Ульрес</span>
+        </div>
+
+        <div class="menu__container">
+            <i onclick=showSidebar() class="fa-solid fa-bars menu"></i>
+        </div>
+
+        <nav class="header__nav">
+            <ul class="header__lists">
+                <li class="header__items"><a class="header__item" href="/index.html">Главная страница</a></li>
+                <li class="header__items"><a class="header__item" href="/menu.html">Меню</a></li>
+                <li class="header__items"><a class="header__item" href="/about.html">О нас</a></li>
+                <li class="header__items"><a class="header__item" href="/services.html">Услуги</a></li>
+                <li class="header__items"><a class="header__item" href="/gallery.html">Галерея</a></li>
+                <li class="header__items"><a class="header__item" href="/news.html">Новости</a></li>
+                <li class="header__items"><a class="header__item" href="/contact.html">Контакты</a></li>
+                <li class="header__items"><a class="header__item header__item--color" href="/reservation.html">Забронировать стол</a></li>
+            </ul>
+        </nav>  
+
+        <div class="sidebar">
+            <ul class="header__sidebar">
+                <i onclick=hideSidebar() class="header__items fa-solid fa-x"></i>
+                <li onclick=hideSidebar()><a class="header__items--sidebar" href="/index.html">Главная страница</a></li>
+                <li onclick=hideSidebar()><a class="header__items--sidebar" href="/menu.html">Меню</a></li>
+                <li onclick=hideSidebar()><a class="header__items--sidebar" href="/about.html">О нас</a></li>
+                <li onclick=hideSidebar()><a class="header__items--sidebar" href="/services.html">Услуги</a></li>
+                <li onclick=hideSidebar()><a class="header__items--sidebar" href="/gallery.html">Галерея</a></li>
+                <li onclick=hideSidebar()><a class="header__items--sidebar" href="/news.html">Новости</a></li>
+                <li onclick=hideSidebar()><a class="header__items--sidebar" href="/contact.html">Контакты</a></li>
+                <li onclick=hideSidebar()><a class="header__items--sidebar header__items--sidebar--color"
+                        href="/reservation.html">Забронировать стол</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero__texts">
+                <h2 class="tittle">Последние новости</h2>
+                <p class="copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur distinctio accusantium minima maxime ad consectetur eius assumenda esse corporis! Consequuntur assumenda porro dolorem id facere voluptate earum ipsum recusandae cupiditate?</p>
+            </div>
+
+            <div class="hero__buttons">
+                <a href="/menu.html" class="hero__links hero__links--color">Наше меню</a>
+            </div>
+        </div>
+    </section>
+    <main class="container grid-container">
+        <section class="news">
+            <article class="news__card">
+                <figure class="news__picture">
+                    <img class="news__img" src="/src/img/news1.jpg" alt="">
+                </figure>
+
+                <div class="news__texts">
+                    <h4 class="news__tittle">Lorem ipsum dolor sit amet.</h4>
+                    <div class="news__between">
+                        <span class="news__span news__author"><i class="fa-regular fa-user"></i>Александр Бурлай</span>
+                        <span class="news__span news__date"><i class="fa-regular fa-clock"></i>17/07/24</span>
+                    </div>
+                    <p class="news__copy">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis dolorem alias
+                        ad voluptates quam dolore tempore nihil provident, doloremque neque unde odio quos voluptate
+                        distinctio molestiae? Voluptas rem aut dolorum.</p>
+                </div>
+            </article>
+
+            <article class="news__card">
+                <figure class="news__picture">
+                    <img class="news__img" src="/src/img/gallery hero.jpg" alt="">
+                </figure>
+
+                <div class="news__texts">
+                    <h4 class="news__tittle">Lorem ipsum dolor sit amet.</h4>
+                    <div class="news__between">
+                        <span class="news__span news__author"><i class="fa-regular fa-user"></i>Александр Бурлай</span>
+                        <span class="news__span news__date"><i class="fa-regular fa-clock"></i>17/07/24</span>
+                    </div>
+                    <p class="news__copy">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis dolorem alias
+                        ad voluptates quam dolore tempore nihil provident, doloremque neque unde odio quos voluptate
+                        distinctio molestiae? Voluptas rem aut dolorum.</p>
+                </div>
+            </article>
+
+            <article class="news__card">
+                <figure class="news__picture">
+                    <img class="news__img" src="/src/img/menuHero.jpg" alt="">
+                </figure>
+
+                <div class="news__texts">
+                    <h4 class="news__tittle">Lorem ipsum dolor sit amet.</h4>
+                    <div class="news__between">
+                        <span class="news__span news__author"><i class="fa-regular fa-user"></i>Александр Бурлай</span>
+                        <span class="news__span news__date"><i class="fa-regular fa-clock"></i>17/07/24</span>
+                    </div>
+                    <p class="news__copy">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis dolorem alias
+                        ad voluptates quam dolore tempore nihil provident, doloremque neque unde odio quos voluptate
+                        distinctio molestiae? Voluptas rem aut dolorum.</p>
+                </div>
+            </article>
+
+            <article class="news__card">
+                <figure class="news__picture">
+                    <img class="news__img" src="/src/img/menu (2)-min.jpg" alt="">
+                </figure>
+
+                <div class="news__texts">
+                    <h4 class="news__tittle">Lorem ipsum dolor sit amet.</h4>
+                    <div class="news__between">
+                        <span class="news__span news__author"><i class="fa-regular fa-user"></i>Александр Бурлай</span>
+                        <span class="news__span news__date"><i class="fa-regular fa-clock"></i>17/07/24</span>
+                    </div>
+                    <p class="news__copy">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis dolorem alias
+                        ad voluptates quam dolore tempore nihil provident, doloremque neque unde odio quos voluptate
+                        distinctio molestiae? Voluptas rem aut dolorum.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="sidebar-grid">
+
+            <form class="sidebar__form">
+                <input class="sidebar__input sidebar__input--text " type="text" placeholder="Type Here">
+                <input class="sidebar__input sidebar__input--btn" type="button" value="Search">
+            </form>
+
+            <div class="photo__gallery">
+                <h4 class="photo__gallery--tittle">Фотогалерея</h4>
+
+                <div class="gallery-grid">
+
+                    <a target="_blank" href="/gallery.html"><img class="photo__gallery--image" src="/src/img/carousel2-min.jpg"
+                            alt=""></a>
+
+                    <a target="_blank" href="/gallery.html"><img class="photo__gallery--image" src="/src/img/carousel1-min.jpeg"
+                            alt=""></a>
+
+                    <a target="_blank" href="/gallery.html"><img class="photo__gallery--image" src="/src/img/carousel4-min.jpg"
+                            alt=""></a>
+
+                    <a target="_blank" href="/gallery.html"><img class="photo__gallery--image" src="/src/img/carousel5-min.jpg"
+                            alt=""></a>
+
+                    <a target="_blank" href="/gallery.html"><img class="photo__gallery--image" src="/src/img/carousel6-min.jpg"
+                            alt=""></a>
+
+                    <a target="_blank" href="/gallery.html"><img class="photo__gallery--image" src="/src/img/menu (4)-min.jpg"
+                            alt=""></a>
+
+                </div>
+
+                <div class="recent__posts">
+                    <h5 class="photo__gallery--tittle photo__gallery--tittle--margin">Недавние Посты</h4>
+                        <div class="posts">
+                            <ul>
+                                <li><a class="post" href="">Lorem ipsum dolor sit amet</a></li>
+                                <li><a class="post" href="">Lorem ipsum dolor sit amet consectetur adipisicing.</a></li>
+                                <li><a class="post" href="">Lorem ipsum dolor sit amet.</a></li>
+                                <li><a class="post" href="">Lorem ipsum dolor sit.</a></li>
+                                <li><a class="post" href="">Lorem ipsum dolor sit amet.</a></li>
+                                <li><a class="post" href="">Lorem ipsum dolor sit amet.</a></li>
+
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container container--footer">
+            <div class="footer__links">
+                <ul class="footer__list">
+                    <li><p class="footer__links footer__link--size">Быстрый доступ</p></li>
+                    <li><a class="footer__link" href="/index.html">Главная страница</a></li>
+                    <li><a class="footer__link" href="/menu.html">Наше меню</a></li>
+                    <li><a class="footer__link" href="/about.html">О нас</a></li>
+                    <li><a class="footer__link" href="/gallery.html">Галерея</a></li>
+                    <li><a class="footer__link" href="#specials">Специальные предложения</a></li>
+                    <li><a class="footer__link" href="/reservation.html">Забронировать стол</a></li>
+                    <li><a class="footer__link" href="/contact.html">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__descrition">
+                <figure class="footer__picture">
+                    <span class="footer__logo logo">Ульрес</span>
+                </figure>
+
+                <div class="footer__texts">
+                    <h5 class="footer__text">Наши гости питаются хорошо</h5>
+                    <p class="footer__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempore at
+                        praesentium nemo! Asperiores ipsam ea, sit enim doloribus molestiae?</p>
+                    <a href="#" class="footer__reservation">Забронируйте сейчас</a>
+                    <a href="tel:123-456-7890" class="footer__phone">+7 927 345 67 89</a>
+                </div>
+            </div>
+
+            <div class="footer__gallery">
+                <p class="footer__text footer__text--gallery">Последняя галерея</p>
+
+                <div class="footer__gallery--container">
+                    <img class="footer__img" src="/src/img/carousel1-min.jpeg" alt="">
+                    <img class="footer__img" src="/src/img/carousel2-min.jpg" alt="">
+                    <img class="footer__img" src="/src/img/carousel4-min.jpg" alt="">
+                    <img class="footer__img" src="/src/img/carousel4-min.jpg" alt="">
+                    <img class="footer__img" src="/src/img/carousel1-min.jpeg" alt="">
+                    <img class="footer__img" src="/src/img/carousel2-min.jpg" alt="">
+                </div>
+
+
+            </div>
+
+            <p class="footer__rights">Ульрес &copy; 2024. Разработан <a class="footer__dev" target="_blank" href="">Захаров А.А.</a></p>
+        </div>
+    </footer>
+
+
+
+    <script src="/js/menu.js">
+    </script>
+
+    <script src="/js/gallery.js">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="/js/testimonials.js"></script>
+
+    <script src="https://kit.fontawesome.com/2a76a9117a.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>

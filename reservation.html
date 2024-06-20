@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ульрес ресторан</title>
+    <link rel="shortcut icon" href="/src/img/android-chrome-192x192.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/reservation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo__container">
+            <span class="logo">Ульрес</span>
+        </div>
+
+        <div class="menu__container">
+            <i onclick=showSidebar() class="fa-solid fa-bars menu"></i>
+        </div>
+
+        <nav class="header__nav">
+            <ul class="header__lists">
+                <li class="header__items"><a class="header__item" href="/index.html">Главная страница</a></li>
+                <li class="header__items"><a class="header__item" href="/menu.html">Меню</a></li>
+                <li class="header__items"><a class="header__item" href="/about.html">О нас</a></li>
+                <li class="header__items"><a class="header__item" href="/services.html">Услуги</a></li>
+                <li class="header__items"><a class="header__item" href="/gallery.html">Галерея</a></li>
+                <li class="header__items"><a class="header__item" href="/news.html">Новости</a></li>
+                <li class="header__items"><a class="header__item" href="/contact.html">Контакты</a></li>
+                <li class="header__items"><a class="header__item header__item--color" href="/reservation.html">Забронировать стол</a></li>
+            </ul>
+        </nav>
+
+        <div class="sidebar">
+            <ul class="header__sidebar">
+                <i onclick=hideSidebar() class="header__items fa-solid fa-x"></i>
+                <li onclick=hideSidebar()><a class="header__items--sidebar" href="/index.html">Главная страница</a></li>
+                <li onclick=hideSidebar()><a class="header__items--sidebar" href="/menu.html">Меню</a></li>
+                <li onclick=hideSidebar()><a class="header__items--sidebar" href="/about.html">О нас</a></li>
+                <li onclick=hideSidebar()><a class="header__items--sidebar" href="/services.html">Услуги</a></li>
+                <li onclick=hideSidebar()><a class="header__items--sidebar" href="/gallery.html">Галерея</a></li>
+                <li onclick=hideSidebar()><a class="header__items--sidebar" href="/news.html">Новости</a></li>
+                <li onclick=hideSidebar()><a class="header__items--sidebar" href="/contact.html">Контакты</a></li>
+                <li onclick=hideSidebar()><a class="header__items--sidebar header__items--sidebar--color"
+                        href="/reservation.html">Забронировать стол</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero__texts">
+                <h2 class="tittle">Забронировать стол</h2>
+                <p class="copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, libero. Tempora dolores, ipsa blanditiis molestias ad alias. Fugiat harum odit qui earum? Porro laboriosam repellendus assumenda neque eius? Possimus, nihil.</p>
+            </div>
+
+            <div class="reservation__container">
+                <form class="reservation" name="reservation" netlify>
+
+                    <label for="name">Полное имя:</label>
+                    <input placeholder="Александр Бурлай" type="text" id="name" name="name" required>
+
+                    <label for="email">Электронная почта:</label>
+                    <input placeholder="youremail@example.com" type="email" id="email" name="email" required>
+
+                    <label for="phone">номер телефона:</label>
+                    <input placeholder="+7 956 912 5678" type="tel" id="phone" name="phone" required>
+
+                    <label for="date">Дата бронирования:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="time">Время бронирования:</label>
+                    <input type="time" id="time"  name="time" required>
+
+                    <label for="guests">Количество гостей:</label>
+                    <input placeholder="Max 8 guests" type="number" id="guests" name="guests" min="1" max="8" required>
+
+                    <label for="table-preference">Расположение стола:</label>
+                    <select id="table-preference" name="table-preference">
+                        <option value="none">Нет предпочтений</option>
+                        <option value="indoor">В помещении</option>
+                        <option value="outdoor">Летняя терраса</option>
+                        <option value="window">Рядом с окном</option>
+                    </select>
+
+                    <label for="comments">Дополнительные комментарии:</label>
+                    <textarea placeholder="Пишите ваше сообщение здесь!" id="comments" name="comments"></textarea>
+
+                    <label for="terms">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        Я принимаю правила и условия
+                    </label>
+
+                    <button class="hero__links" type="submit">Забронировать</button>
+            </div>
+            </form>
+        </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container container--footer">
+            <div class="footer__links">
+                <ul class="footer__list">
+                    <div class="footer__links">
+                <ul class="footer__list">
+                    <li><a class="footer__link" href="/index.html">Главная страница</a></li>
+                    <li><a class="footer__link" href="/menu.html">Наше меню</a></li>
+                    <li><a class="footer__link" href="/about.html">О нас</a></li>
+                    <li><a class="footer__link" href="/gallery.html">Галерея</a></li>
+                    <li><a class="footer__link" href="#specials">Специальные предложения</a></li>
+                    <li><a class="footer__link" href="/reservation.html">Забронировать стол</a></li>
+                    <li><a class="footer__link" href="/contact.html">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__descrition">
+                <figure class="footer__picture">
+                    <span class="footer__logo logo">Ульрес</span>
+                </figure>
+
+                <div class="footer__texts">
+                    <h5 class="footer__text">НашИ гостИ питаются хорошо</h5>
+                    <p class="footer__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempore at
+                        praesentium nemo! Asperiores ipsam ea, sit enim doloribus molestiae?</p>
+                    <a href="#" class="footer__reservation">Забронируйте сейчас</a>
+                    <a href="tel:123-456-7890" class="footer__phone">+7 912 345 67 89</a>
+                </div>
+            </div>
+
+            <div class="footer__gallery">
+                <p class="footer__text footer__text--gallery">Последняя галерея</p>
+
+                <div class="footer__gallery--container">
+                    <img class="footer__img" src="/src/img/carousel1-min.jpeg" alt="">
+                    <img class="footer__img" src="/src/img/carousel2-min.jpg" alt="">
+                    <img class="footer__img" src="/src/img/carousel4-min.jpg" alt="">
+                    <img class="footer__img" src="/src/img/carousel4-min.jpg" alt="">
+                    <img class="footer__img" src="/src/img/carousel1-min.jpeg" alt="">
+                    <img class="footer__img" src="/src/img/carousel2-min.jpg" alt="">
+                </div>
+
+
+            </div>
+
+            <p class="footer__rights">Ульрес &copy; 2024. Разработан <a class="footer__dev" target="_blank" href="">Захаров А.А.</a></p>
+        </div>
+    </footer>
+
+
+    <script src="/js/menu.js">
+    </script>
+
+    <script src="/js/gallery.js">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="/js/testimonials.js"></script>
+
+    <script src="https://kit.fontawesome.com/2a76a9117a.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>
